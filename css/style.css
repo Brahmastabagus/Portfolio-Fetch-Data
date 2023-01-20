@@ -297,3 +297,16 @@ footer .desc .my_inform ul li {
 footer .desc .my_inform ul {
     gap: 5px;
 }
+
+/* Fetch Data */
+.fetch {
+    padding: 1rem 4rem;
+}
+
+.fetch h1 {
+    margin-bottom: 2rem;
+}
+
+.fetch .dropdown .js-data-example-ajax {
+    width: 30%;
+}
