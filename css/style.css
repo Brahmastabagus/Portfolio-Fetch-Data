@@ -126,6 +126,40 @@ li {
     color: #BCEAD5 !important;
 }
 
+.styled-table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #0ea2cf;
+    color: #ffffff;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:nth-of-type(odd):hover {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
 /* NAVBAR */
 nav {
     justify-content: space-between;
@@ -297,16 +331,63 @@ footer .desc .my_inform ul li {
 footer .desc .my_inform ul {
     gap: 5px;
 }
-
 /* Fetch Data */
 .fetch {
     padding: 1rem 4rem;
+}
+
+.fetch .pilihan {
+    width: 20%;
+    border: 1px solid #E8EAED;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px -2px #9098A9;
+    padding: .3rem .5rem !important;
+    font-size: 1rem;
 }
 
 .fetch h1 {
     margin-bottom: 2rem;
 }
 
-.fetch .dropdown .js-data-example-ajax {
-    width: 30%;
+.fetch .dropdown {
+    width: 100%;
+    display: none;
+}
+
+.fetch .table {
+    display: none;
+}
+
+.fetch .search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+
+.fetch .search-box input {
+    padding: .5rem .5rem .5rem 2.2rem;
+    border: 1px solid black;
+    width: 15rem;
+    transition: .5s ease;
+    border-radius: 5px;
+    letter-spacing: 0.025em;
+}
+
+.fetch input:focus {
+    width: 20rem;
+    transition: .5s ease;
+}
+
+.fetch button {
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    left: .3rem;
+}
+
+.fetch button:hover {
+    cursor: pointer;
 }

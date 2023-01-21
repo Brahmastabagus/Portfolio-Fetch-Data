@@ -40,8 +40,30 @@
 
   <div class="fetch">
     <h1>Daftar Pahlawan Nasional</h1>
+    <select class="pilihan" name="pilihan" id="pilihan">
+      <option selected disabled>Pilihan</option>
+      <option value="dropdown">Dropdown</option>
+      <option value="table">Table</option>
+    </select>
     <div class="dropdown">
       <select class="js-data-example-ajax"></select>
+    </div><div class="table">
+      <div class="search-box">
+        <input type="text" name="search" id="search" placeholder="Cari nama...">
+        <button type="submit"><i data-feather="search"></i></button>
+      </div>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th class="text-center">Nama</th>
+            <th class="text-center">Tahun Lahir</th>
+            <th class="text-center">Tahun Meninggal</th>
+            <th class="text-center">Tahun Penetapan Pahlawan Nasional</th>
+            <th class="text-center">Deskripsi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
   </div>
 
