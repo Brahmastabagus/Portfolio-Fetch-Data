@@ -1,3 +1,21 @@
+const links = document.querySelectorAll("nav li")
+
+links.forEach((link, key) => {
+  link.addEventListener('click', () => {
+    link.classList.add("active")
+    console.log({key});
+
+    links.forEach(function (ela, ell) {
+      // console.log({ela, ell, key});
+      if (key !== ell) {
+        ela.classList.remove('active');
+      } else if (ell === 4) {
+        ela.classList.remove('active');
+      }
+    });
+  })
+})
+
 const content = document.querySelector("tBody")
 
 const frame = (datas) => {

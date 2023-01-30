@@ -20,7 +20,7 @@
             <a class="no-underline text-putih" href="#home">Bagus.</a>
         </h4>
         <ul class="flex">
-            <li class="active">
+            <li>
                 <a class="no-underline text-putih letter-spacing" href="#home">Home</a>
             </li>
             <li>
@@ -290,21 +290,9 @@
 
     <!-- JavaScript -->
     <script>
-        const links = document.querySelectorAll("nav li")
-
-        links.forEach((link, key) => {
-            link.addEventListener('click', () => {
-                link.classList.add("active")
-                
-                links.forEach(function (ell, els) {
-                    if (key !== els) {
-                        ell.classList.remove('active');
-                    }
-                    console.log(key);
-                });
-            })
-        })
+        
     </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -347,6 +347,10 @@ footer .desc .my_inform ul {
     font-size: 1rem;
 }
 
+.fetch .pilihan option {
+    cursor: pointer !important;
+}
+
 .fetch h1 {
     margin-bottom: 2rem;
 }
@@ -369,7 +373,8 @@ footer .desc .my_inform ul {
 
 .fetch .search-box input {
     padding: .5rem .5rem .5rem 2.2rem;
-    border: 1px solid black;
+    border: 1px solid #E8EAED;
+    box-shadow: 0 1px 3px -2px #9098A9;
     width: 15rem;
     transition: .5s ease;
     border-radius: 5px;
